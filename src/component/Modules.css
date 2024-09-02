@@ -1,0 +1,81 @@
+.course-syllabus {
+  max-width: 628px;
+  margin: 20px auto;
+  padding: 40px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.course-syllabus h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.course-syllabus p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modules {
+  border-top: 1px solid #333;
+}
+
+.module {
+  width: Fixed (628px) px;
+  height: Hug (88px) px;
+  padding: 16px 24px 16px 24px;
+  gap: 8px;
+  border-radius: 16px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  border-bottom: 1px solid #333;
+}
+
+.module-header {
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #ffffff0f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.module-header span {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25.6px;
+  text-align: left;
+}
+
+.module-header h3 {
+  margin: 0;
+  padding: 20px;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: left;
+}
+
+.module-content {
+  padding: 10px 20px;
+  background: #ffffff0f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  text-align: left;
+}
+
+.download-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #5753c9;
+}

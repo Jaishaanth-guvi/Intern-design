@@ -1,0 +1,11 @@
+.vector1 {
+  width: 100%;
+  background-image: url("../assets/vector1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+.fix {
+  width: 95%;
+}

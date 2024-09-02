@@ -1,0 +1,130 @@
+.high {
+  justify-content: center;
+  width: 630px;
+  margin-left: 400px;
+  margin-top: 90px;
+  background: white;
+  border-radius: 12px;
+  height: 400px;
+}
+.title h3 {
+  margin-left: 115px;
+  margin-top: 35px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 160%;
+  background: linear-gradient(90deg, #b900fa 0%, #7926ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+.chain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.chain1 {
+  width: 300px;
+  height: 154px;
+  top: 78px;
+  left: 32px;
+  flex-direction: column;
+}
+.chain1 ul li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #1e1e1e;
+}
+.chain2 {
+  width: 300px;
+  height: 154px;
+  top: 78px;
+  left: 32px;
+  flex-direction: column;
+}
+.chain2 ul li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #1e1e1e;
+}
+.enroll button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 15px;
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(90deg, #b900fa 0%, #7926ff 100%);
+  flex: none;
+  border: none;
+  color: white;
+  order: 6;
+  flex-grow: 0;
+  z-index: 6;
+}
+.enroll {
+  padding-top: 10%;
+  padding-inline: 2rem;
+}
+
+@media (max-width: 560px) {
+  .high {
+    width: 100% !important;
+    margin-left: 0rem !important;
+    height: auto;
+    border-radius: 0%;
+    margin: 0;
+  }
+  .title h3 {
+    display: flex;
+    text-align: center;
+    margin: 45px;
+    padding-top: 35px;
+  }
+
+  .enroll {
+    padding: 30px;
+    padding-bottom: 40px;
+  }
+  .chain {
+    display: block;
+  }
+  .chain1 {
+    width: 100%;
+    height: auto;
+  }
+  .chain2 {
+    width: 100%;
+    height: auto;
+  }
+  .chain ul {
+    margin-bottom: 0;
+  }
+  .chain2 ul {
+    margin-top: 0;
+  }
+}
+@media (max-width: 360px) {
+  .title h3 {
+    display: flex;
+    text-align: center;
+    margin: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .high {
+    width: 630px;
+    margin-left: 12rem;
+  }
+  .pic {
+    padding-left: 0;
+  }
+  .dev-chain {
+    margin-left: 12rem;
+  }
+}

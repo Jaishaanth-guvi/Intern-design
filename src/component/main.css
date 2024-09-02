@@ -1,0 +1,227 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.block {
+  position: absolute;
+  width: 450px;
+  height: 344px;
+  left: 248px;
+  top: 68px;
+}
+.block h1 {
+  letter-spacing: 1px;
+  font-weight: 500;
+  line-height: 72px;
+  font-size: 48px;
+}
+.block span {
+  color: #7926ff;
+}
+.block a {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 16px;
+  padding-left: 16px;
+  gap: 10px;
+  width: 304px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 0;
+  margin-bottom: 5px;
+}
+.sub a {
+  padding-bottom: 38px;
+}
+.info h2 {
+  margin-top: 1rem;
+}
+form {
+  width: 100%;
+}
+.info {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  isolation: isolate;
+  position: absolute;
+  width: 390px;
+  height: 410px;
+  left: 610px;
+  top: 20px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
+}
+.info label {
+  padding: 2px;
+  margin-left: 15px;
+  display: block;
+}
+.info [type="text"],
+[type="email"] {
+  margin-bottom: 15px;
+  padding: 15px;
+  margin-left: 15px;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+}
+.phone label {
+  padding: 2px;
+
+  display: block;
+}
+.react-tel-input {
+  margin-left: 20px;
+}
+
+.react-tel-input .form-control {
+  border: 1px solid #ccc;
+  padding: 25px;
+  margin-left: 3rem;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 77%;
+}
+
+button[type="submit"] {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: large;
+  margin-top: 0.6rem;
+  font-size: 18px;
+  line-height: 23.4px;
+  border-radius: 0px 0px 16px 16px;
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(90deg, #b900fa 0%, #7926ff 100%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  flex: none;
+  order: 6;
+  flex-grow: 0;
+  z-index: 1;
+  color: white;
+}
+.button {
+  width: 0px;
+}
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.mv1 {
+  display: none;
+}
+
+@media (max-width: 560px) {
+  .main {
+    width: 100%;
+    background-image: url("../assets/Top.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .mv1 {
+    display: flex;
+    gap: 19px;
+  }
+  .info1 {
+    max-width: 100%;
+  }
+  .info form ::placeholder {
+    color: #dadada;
+  }
+  .info {
+    position: static;
+    margin-top: 80px;
+    max-width: 100%;
+  }
+  .block {
+    display: contents;
+    align-content: center;
+    max-width: 520px;
+  }
+  .block span {
+    margin-left: 25%;
+  }
+  .block h1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .block a {
+    margin-left: 10%;
+  }
+  .info {
+    max-width: 360px;
+    margin-left: 5%;
+  }
+  .info label {
+    margin-left: 15px;
+  }
+  .info [type="text"],
+  [type="email"] {
+    margin-left: 15px;
+  }
+  .react-tel-input {
+    margin-left: 15px;
+  }
+  button[type="submit"] {
+    color: white;
+    max-width: 360px;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .info1 {
+    max-width: 100%;
+  }
+}
+@media (max-width: 460px) {
+  .info {
+    width: 100%;
+    margin-left: 0;
+  }
+  .info label {
+  }
+  .info [type="text"],
+  [type="email"] {
+  }
+  .react-tel-input {
+  }
+  button[type="submit"] {
+    color: white;
+    width: 100%;
+    z-index: 1;
+  }
+  form {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .inf01 {
+    max-width: 100%;
+  }
+  .block {
+    position: unset;
+    margin-right: 20rem;
+  }
+}

@@ -1,0 +1,23 @@
+.vector1 {
+  width: 100%;
+  background-image: url("../assets/vector1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.fix {
+  width: 95%;
+}
+
+@media (max-width: 560px) {
+  .vector1 {
+    background-image: none;
+  }
+  .fix {
+    width: 100%;
+
+    background-image: url("../assets/info-side.png");
+    background-repeat: no-repeat;
+    background-size: contain 70px;
+    background-position: right;
+  }
+}

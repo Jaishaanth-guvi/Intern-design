@@ -1,0 +1,128 @@
+.syllabus {
+  background-color: #0e0017;
+  padding: 20px;
+  margin-left: 110px;
+  width: 80%;
+  z-index: 0;
+}
+
+.syllabus_content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion .accordion-item {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  isolation: isolate;
+  border: unset;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.accordion .accordion-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  padding: 1.2px;
+  background: linear-gradient(to left bottom, #0e0017, #8d8791);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.accor .accordion-header {
+  background-color: #14101c;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-header span {
+  font-weight: 200;
+  margin-right: 5px;
+}
+
+.accor .accordion-button {
+  background-color: #14101c;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding: 6px;
+  border: none;
+  box-shadow: none;
+}
+
+.accor .accordion-button:not(.collapsed) {
+  background-color: #14101c;
+  color: #ffffff;
+}
+
+.accor .accordion-button::after {
+  filter: invert(1);
+  background-image: var(--bs-accordion-btn-icon);
+}
+
+.accor .accordion-body {
+  background-color: #14101c;
+  color: #d3d3d3;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  font-size: 16px;
+}
+
+.syl_btn {
+  background: linear-gradient(90deg, #b900fa 0%, #7926ff 100%);
+  color: #ffffff;
+  padding: 10px 50px 10px 50px;
+
+  font-size: 16px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.syl_btn:hover {
+  background-color: #1a78c2;
+}
+
+.accordion-header button {
+  background-color: #1e1b2e;
+}
+
+@media (max-width: 560px) {
+  .syllabus {
+    margin: 0;
+    padding: 0;
+  }
+  .syllabus {
+    width: 100%;
+    background-image: url(../assets/syllabus-side.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+  .syllabus_content {
+    padding: 20px;
+  }
+}
